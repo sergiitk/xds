@@ -30,6 +30,22 @@ def xds_api_dependencies():
         "io_bazel_rules_go",
         locations = REPOSITORY_LOCATIONS,
     )
+    xds_http_archive(
+        "rules_python",
+        locations = REPOSITORY_LOCATIONS,
+    )
+    xds_http_archive(
+        "rules_proto",
+        locations = REPOSITORY_LOCATIONS,
+    )
+    xds_http_archive(
+        "build_bazel_rules_swift",
+        locations = REPOSITORY_LOCATIONS,
+    )
+    xds_http_archive(
+        "build_bazel_apple_support",
+        locations = REPOSITORY_LOCATIONS,
+    )
 
 # Old name for backward compatibility.
 # TODO(roth): Remove once all callers are updated to use the new name.
