@@ -4,7 +4,7 @@ package xds.type.v3;
 
 import "google/api/expr/v1alpha1/checked.proto";
 import "google/api/expr/v1alpha1/syntax.proto";
-import "cel/expr/checked.proto";
+//import "cel/expr/checked.proto";
 import "cel/expr/syntax.proto";
 import "google/protobuf/wrappers.proto";
 
@@ -37,7 +37,7 @@ message CelExpression {
     cel.expr.ParsedExpr cel_expr_parsed = 3;
 
     // Parsed expression in abstract syntax tree (AST) form that has been successfully type checked.
-    cel.expr.CheckedExpr cel_expr_checked = 4;
+//    cel.expr.CheckedExpr cel_expr_checked = 4;
   }
 }
 

@@ -45,4 +45,6 @@ EXTERNAL_PROTO_CC_BAZEL_DEP_MAP = {
 EXTERNAL_PROTO_PY_BAZEL_DEP_MAP = {
     "@com_google_googleapis//google/api/expr/v1alpha1:checked_proto": "@com_google_googleapis//google/api/expr/v1alpha1:expr_py_proto",
     "@com_google_googleapis//google/api/expr/v1alpha1:syntax_proto": "@com_google_googleapis//google/api/expr/v1alpha1:expr_py_proto",
+    "@dev_cel//proto/cel/expr:checked_proto": "@dev_cel//proto/cel/expr:checked_py_pb2",
+    "@dev_cel//proto/cel/expr:syntax_proto": "@dev_cel//proto/cel/expr:syntax_py_pb2",
 }

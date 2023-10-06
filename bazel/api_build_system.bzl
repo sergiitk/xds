@@ -50,6 +50,8 @@ def _py_proto_mapping(dep):
 # https://github.com/bazelbuild/bazel/issues/3935 and/or
 # https://github.com/bazelbuild/bazel/issues/2626 are resolved.
 def _xds_py_proto_library(name, srcs = [], deps = []):
+    print(name)
+    print(srcs)
     mapped_deps = [_py_proto_mapping(dep) for dep in deps]
     mapped_unique_deps = []
     [mapped_unique_deps.append(d) for d in mapped_deps if d not in mapped_unique_deps]
