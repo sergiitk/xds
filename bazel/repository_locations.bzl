@@ -28,6 +28,11 @@ REPOSITORY_LOCATIONS = dict(
         strip_prefix = "protobuf-3.18.0",
         urls = ["https://github.com/protocolbuffers/protobuf/releases/download/v3.18.0/protobuf-all-3.18.0.tar.gz"],
     ),
+    dev_cel = dict(
+        sha256 = "6d4bf5a0ac04b35c421cb8317cd35bbe78aacffee787bc7aa89daa1e211ff6be",
+        strip_prefix = "cel-spec-0.13.0",
+        urls = ["https://github.com/google/cel-spec/archive/refs/tags/v0.13.0.tar.gz"],
+    ),
     io_bazel_rules_go = dict(
         sha256 = "69de5c704a05ff37862f7e0f5534d4f479418afc21806c887db544a316f3cb6b",
         urls = ["https://github.com/bazelbuild/rules_go/releases/download/v0.27.0/rules_go-v0.27.0.tar.gz"],
