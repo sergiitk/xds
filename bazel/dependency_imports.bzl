@@ -96,13 +96,6 @@ def xds_dependency_imports(go_version = GO_VERSION):
         # source = "https://github.com/bufbuild/protoc-gen-validate/blob/v0.10.1/dependencies.bzl#L35-L40"
     )
     go_repository(
-        name = "com_github_lyft_protoc_gen_star_v2",
-        importpath = "github.com/lyft/protoc-gen-star/v2",
-        sum = "h1:keaAo8hRuAT0O3DfJ/wM3rufbAjGeJ1lAtWZHDjKGB0=",
-        version = "v2.0.1",
-    )
-
-    go_repository(
         name = "org_golang_google_grpc",
         build_file_proto_mode = "disable",
         importpath = "google.golang.org/grpc",
